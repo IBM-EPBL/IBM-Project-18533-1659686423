@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 3</title>
+    <link rel="stylesheet" href="./static.css">
+</head>
+<body>
+    <h1>Assignment 3 - B3-3M5E -- Skill and Job Recommender</h1>
+    <div class="ImgSlider"></div>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "87ad3502-2685-48d1-bbdd-96ed7b353f93", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "26b5b847-d411-43f0-af69-4cd200aed370", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+
+</body>
+</html>
