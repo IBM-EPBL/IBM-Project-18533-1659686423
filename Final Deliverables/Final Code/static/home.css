@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+header {
+	
+    background-image: url(../static/home.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.wrapper{
+	background: linear-gradient(0deg, #222224 0%, #39a4a4 100%);
+	backdrop-filter: blur(60px);
+	border: 1px solid rgba(155, 149, 162, 0.922);
+	height: 17%;
+}
+
+
+.nav-area {
+	width: 57%;
+	position: absolute;
+	top: 20%;
+	right: 05%;
+	list-style: none;
+}
+
+.nav-area li {
+	display: inline-block;
+    margin: 10px;
+	padding: 13px 25px;
+
+}
+.nav-area li a {
+	color: rgb(227, 222, 222);
+	text-decoration: none;
+	background-color: rgb(26, 29, 28);
+	box-shadow: 2px 2px 5px white;
+	padding: 5px 20px;
+	font-family: 'Source Serif Pro', serif;
+	
+	font-size: 16px;
+	text-transform: uppercase;
+    border-radius: 5px;
+}
+.nav-area li a:hover {
+	background:rgb(10, 10, 10);
+	color: rgb(220, 57, 57);
+	box-shadow: 2px 2px 5px rgb(202, 81, 81);
+	cursor: pointer;
+	
+}
+
+.welcome-text{
+	
+	min-height: 2vh;
+	width: 60%;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	top: 28%;
+	left: 28%;
+}
+.welcome-text h1{
+	font-size: 60px;
+	color: rgba(213, 211, 211, 0.052);
+	-webkit-text-stroke: 2px #1a241f;
+	text-shadow: 1px 1px 5px rgba(222, 216, 216, 0.685);
+
+}
+.welcome-text h1::before{
+	content: attr(data-text);
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background: #F6F8F9;
+	background: radial-gradient(circle farthest-corner at center center, #F6F8F9 0%, #67a9ca 30%, #63b5f0 60%, #92c0ee 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 3px #1c1e1ab9;
+	overflow: hidden;
+    border-right: 2px solid red;
+	animation: animate 5s linear infinite;
+}
+
+@keyframes animate 
+{
+	0%,10%,100%{
+		width: 0%;
+	}
+	30%,70%,97%{
+		width: 100%;
+	}
+	
+	
+}
+.quote {
+	position: absolute;
+	width: 50%;
+	left: 29%;
+	top: 60%;
+	text-align: center;
+	
+
+}
+.quote h1 {
+	text-align: center;
+	color:rgb(232, 42, 42);
+	text-shadow: 2px 2px 5px white;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 'Libre Bodoni', serif;
+    letter-spacing: 10px;
+	animation: text 3s linear infinite;
+}

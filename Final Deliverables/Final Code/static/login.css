@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Merriweather&display=swap');
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Limelight', cursive;
+	background-image: url("../static/img3.jpg");
+
+}
+header {
+	
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.nav-area {
+	width: 57%;
+	position: absolute;
+	top: 2%;
+	right: 05%;
+	list-style: none;
+}
+.nav-area li {
+	display: inline-block;
+    margin: 10px;
+	padding: 13px 25px;
+
+}
+.nav-area li a {
+	color: rgb(227, 222, 222);
+	text-decoration: none;
+	background-color: rgb(26, 29, 28);
+	box-shadow: 2px 2px 5px white;
+	padding: 5px 20px;
+	font-family: 'Source Serif Pro', serif;
+	
+	font-size: 16px;
+	text-transform: uppercase;
+    border-radius: 5px;
+}
+.nav-area li a:hover {
+	background:rgb(10, 10, 10);
+	color: rgb(220, 57, 57);
+	box-shadow: 2px 2px 5px rgb(202, 81, 81);
+	cursor: pointer;
+	
+}
+.hello {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	z-index: -1;
+
+}
+.contact-form {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	border-radius: 20px;
+	box-shadow: 2px 2px 5px rgb(232, 221, 221);
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 350px;
+	padding: 80px 40px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.contact-form h2 {
+	position: relative;
+	top: -25px;
+	margin: 0;
+	padding: 0 0 20px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+.contact-form p {
+	margin-top:3px ;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.contact-form input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+ .contact-form input[type="password"] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+.contact-form input[type="text"]{
+    border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+.contact-form input[type="password"]:focus{
+	border-color: black;
+	
+}
+.contact-form input[type="text"]:focus{
+	border-color: black;
+
+}
+
+.contact-form input[type=submit] {
+	height: 30px;
+	color: #fff;
+	font-size: 15px;
+	background:#161615;
+	box-shadow: 2px 2px 5px rgb(226, 223, 223);
+	cursor: pointer;
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	margin-top: 15%;
+}
+.contact-form input[type=submit]:hover{
+    background-color:#e61616;
+	transition: 0.5s ease;
+	transform: translateY(10px);
+}
+
+.links{
+	font-family: 'Poppins', sans-serif;
+	
+	padding: 20px;
+}
+.links a{
+	color: #e61616;
+	padding-left: 14px;
+}
+.alert {    
+    width:100%;
+    height:40px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size:14px;
+
+}
+
+.success {
+    color:green;
+    font-weight:bold;
+    border: 2px solid green;
+}
+
+.failure {
+    color:red;
+    font-weight:bold;
+    border: 2px solid red;
+}
