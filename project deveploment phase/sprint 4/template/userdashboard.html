@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="..\static\userd.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+    <body>
+        <div class="navigation">
+          <div class="toggle"></div>
+            <ul>
+                <li><a href="html.html">
+                  <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="title">Dashboard</span>
+                  </a></li>
+                  
+                <li><a href="user profile.html">
+                  <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                    <span class="title">Profile</span>
+                </a></li>
+                <li><a href="bot.html"> 
+                  <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                   <span class="title">ChatBot</span>
+                  </a></li>
+                <li><a href="login.html">
+                  <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                    <span class="title">logout</span>
+                </a></li>
+            </ul>
+        </div>
+        
+      
+      
+    </header>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+          let navigation = document.querySelector('.navigation');
+          let toggle = document.querySelector('.toggle');
+          toggle.onclick = function(){
+            navigation.classList.toggle('active')
+          }
+        </script>
+        <section>
+          {% block body %}
+          
+          {% endblock %}
+        </section>
+      </body>
+</html>

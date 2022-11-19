@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Card </title>
+    <link rel="stylesheet" href="/static/profilestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <link rel="stylesheet" href="/static/userd.css">
+    <div class="navigation">
+        <div class="toggle"></div>
+          <ul>
+              <li><a href="/home">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                  <span class="title">Dashboard</span>
+                </a></li>
+              <li><a href="/profile">
+                <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                  <span class="title">Profile</span>
+              </a></li>
+              <li><a href="/index">
+                <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
+                  <span class="title">index</span>
+                </a></li>
+              <li><a href="/comphistory">
+                <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                 <span class="title">Complaint History</span>
+                </a></li>
+              <li><a href="/logout ">
+                <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                  <span class="title">logout</span>
+              </a></li>
+          </ul>
+      </div>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+          let navigation = document.querySelector('.navigation');
+          let toggle = document.querySelector('.toggle');
+          toggle.onclick = function(){
+            navigation.classList.toggle('active')
+          }
+        </script>
+    <div class="cls">
+        <h1>PROFILE</h1>
+    </div>
+  <div class="wrapper">
+     <div class="buttons"><br>
+        Name : <div class="name">{{fullname}}</div><br>
+        Username : <div class="name">{{ username }}</div><br>
+        Email : <div class="name">{{ email }}</div><br>
+        State :<div class="name">{{ address }}</div><br>
+    </div>
+    
+    </div>
+  </div>
+</body>
+</html>
